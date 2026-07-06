@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f5f7fa"/>
+  <rect x="40" y="40" width="720" height="520" fill="#fff" stroke="#0056d2" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" fill="#0056d2" font-family="Arial, sans-serif" font-size="22" font-weight="700">Coursera</text>
+  <text x="400" y="170" text-anchor="middle" fill="#1f1f1f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Ethics, Culture, and</text>
+  <text x="400" y="200" text-anchor="middle" fill="#1f1f1f" font-family="Arial, sans-serif" font-size="22" font-weight="700">Global Perspectives</text>
+  <text x="400" y="250" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="14">University of Illinois Urbana-Champaign</text>
+  <text x="400" y="320" text-anchor="middle" fill="#1f1f1f" font-family="Arial, sans-serif" font-size="18">Chlyde Christian Espinosa</text>
+  <text x="400" y="390" text-anchor="middle" fill="#666" font-family="monospace" font-size="12">Certificate ID: MFYSRRAGV636 · Feb 2026</text>
+</svg>
