@@ -437,64 +437,27 @@ section {
 }
 
 /* Certificates */
-.cert-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.cert-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
 }
 
-.cert-item {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    padding: 14px 16px;
-    background: var(--surface);
+.cert-figure {
+    margin: 0;
     border: 1px solid var(--border);
     border-radius: 10px;
-    color: inherit;
-    text-decoration: none;
-    transition: border-color 0.15s, box-shadow 0.15s;
-}
-
-.cert-item:hover {
-    border-color: var(--accent);
-    box-shadow: var(--shadow);
-    text-decoration: none;
-}
-
-.cert-thumb {
-    width: 72px;
-    height: 54px;
-    flex-shrink: 0;
-    border-radius: 6px;
     overflow: hidden;
-    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow);
 }
 
-.cert-thumb img {
+.cert-figure img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-}
-
-.cert-org {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--accent);
-    margin: 0 0 2px;
-}
-
-.cert-item h3 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin: 0 0 2px;
-}
-
-.cert-meta {
-    font-size: 0.8rem;
-    color: var(--muted);
-    margin: 0;
 }
 
 /* Contact */
