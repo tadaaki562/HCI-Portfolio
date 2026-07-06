@@ -1,84 +1,49 @@
-function toggleTheme() {
-    const isLight = document.body.classList.toggle("light");
-    localStorage.setItem("theme", isLight ? "light" : "dark");
-    syncThemeSwitch();
-}
+(function () {
+    var themeBtn = document.getElementById("theme-btn");
+    var navLinks = document.querySelectorAll(".nav a");
 
-function syncThemeSwitch() {
-    const input = document.querySelector(".theme-switch input");
-    const thumb = document.querySelector(".theme-switch .thumb");
-    if (!input) return;
-    const isLight = document.body.classList.contains("light");
-    input.checked = isLight;
-    if (thumb) thumb.textContent = isLight ? "☀" : "☾";
-}
-
-function initializeTheme() {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light") {
-        document.body.classList.add("light");
-    }
-    syncThemeSwitch();
-}
-
-function initializeScrollReveal() {
-    const panels = document.querySelectorAll("section.panel");
-
-    if (!("IntersectionObserver" in window)) {
-        panels.forEach(panel => panel.classList.add("is-visible"));
-        return;
+    function applyTheme(dark) {
+        document.body.classList.toggle("dark", dark);
+        localStorage.setItem("theme", dark ? "dark" : "light");
     }
 
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("is-visible");
-                revealObserver.unobserve(entry.target);
+    function initTheme() {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        applyTheme(saved === "dark" || (!saved && prefersDark));
+    }
+
+    if (themeBtn) {
+        themeBtn.addEventListener("click", function () {
+            applyTheme(!document.body.classList.contains("dark"));
+        });
+    }
+
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            var href = link.getAttribute("href");
+            if (!href || href.charAt(0) !== "#") return;
+            var target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
             }
         });
-    }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
-
-    panels.forEach(panel => revealObserver.observe(panel));
-}
-
-function initializeNavScrollSpy() {
-    const sections = Array.from(document.querySelectorAll("main section[id]"));
-    const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
-    if (!sections.length || !navLinks.length || !("IntersectionObserver" in window)) return;
-
-    const linkFor = (id) => navLinks.find(link => link.getAttribute("href") === `#${id}`);
-
-    const spyObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const link = linkFor(entry.target.id);
-            if (!link) return;
-            if (entry.isIntersecting) {
-                navLinks.forEach(l => l.classList.remove("is-active"));
-                link.classList.add("is-active");
-            }
-        });
-    }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
-
-    sections.forEach(section => spyObserver.observe(section));
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-    initializeTheme();
-    initializeScrollReveal();
-    initializeNavScrollSpy();
-});
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        const targetId = this.getAttribute("href");
-        if (targetId === "#") return;
-        const target = document.querySelector(targetId);
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }
     });
-});
+
+    if ("IntersectionObserver" in window) {
+        var sections = document.querySelectorAll("section[id]");
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(function (l) { l.classList.remove("active"); });
+                var active = document.querySelector('.nav a[href="#' + entry.target.id + '"]');
+                if (active) active.classList.add("active");
+            });
+        }, { rootMargin: "-40% 0px -55% 0px", threshold: 0 });
+
+        sections.forEach(function (s) { observer.observe(s); });
+    }
+
+    initTheme();
+})();

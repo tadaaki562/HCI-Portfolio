@@ -3,400 +3,327 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chlyde Christian Espinosa | Portfolio</title>
-    <meta name="description" content="E-portfolio of Chlyde Christian Espinosa — BS Computer Science student at Mapúa Malayan Colleges Mindanao. CCIS InnoVision 2026, projects, certificates, and achievements.">
+    <title>Chlyde Christian Espinosa | E-Portfolio</title>
+    <meta name="description" content="E-portfolio of Chlyde Christian Espinosa, BS Computer Science student at Mapua Malayan Colleges Mindanao.">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <nav class="site-nav">
-        <a href="https://github.com/tadaaki562" target="_blank" rel="noopener noreferrer" class="brand-link">
-            <span class="brand-mark">//</span>
-            <span class="brand-name">chlyde espinoza</span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#connect">Connect</a></li>
-        </ul>
-        <label class="theme-switch">
-            <input type="checkbox" onchange="toggleTheme()" aria-label="Toggle light and dark mode">
-            <span class="track"></span>
-            <span class="thumb">?</span>
-        </label>
-    </nav>
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">Chlyde Espinosa</a>
+            <nav class="nav" aria-label="Main">
+                <a href="#about">About</a>
+                <a href="#stack">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#connect">Contact</a>
+            </nav>
+            <button type="button" class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+                <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                </svg>
+                <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
 
-    <div class="container">
+    <main>
 
         <section class="hero">
-            <div>
-                <div class="status-line">
-                    <span class="status-dot"></span>
-                    <span>system online</span>
-                </div>
-                <h1>Building web apps that solve real problems for real people.</h1>
-                <p class="role">BS Computer Science Student — Mapúa Malayan Colleges Mindanao</p>
-                <p class="hero-desc">I'm a 2nd-year CS student who enjoys turning ideas into working software — from community trading platforms and booking systems to UX-focused coursework. I like learning by building, shipping, and iterating.</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#connect" class="btn btn-ghost">Connect</a>
+            <div class="hero-text">
+                <p class="eyebrow">E-Portfolio &middot; CS152</p>
+                <h1>Chlyde Christian Espinosa</h1>
+                <p class="lead">2nd-year Computer Science student at Mapua Malayan Colleges Mindanao. I build web apps, explore HCI, and ship projects from classroom ideas to live deployments.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-fill">See my work</a>
+                    <a href="#connect" class="btn btn-outline">Get in touch</a>
                 </div>
             </div>
-            <div class="photo-frame">
-                <div class="photo-inner">
-                    <img src="profile.jpg" alt="Chlyde Christian Espinosa" class="profile-pic">
+            <figure class="hero-photo">
+                <img src="profile.jpg" alt="Chlyde Christian Espinosa">
+            </figure>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-head">
+                <span class="section-label">About</span>
+                <h2>A bit about me</h2>
+            </div>
+            <div class="prose">
+                <p>I enjoy turning ideas into working software, from community trading platforms and booking systems to UX-focused coursework. I learn best by building, deploying, and improving projects over time.</p>
+                <p>Through group work like HobbieTrades and Kelsey&apos;s Homestay, I&apos;ve picked up frontend development, backend APIs, Vercel deployment, and GitHub collaboration.</p>
+            </div>
+        </section>
+
+        <section class="section" id="stack">
+            <div class="section-head">
+                <span class="section-label">Skills</span>
+                <h2>Tech stack</h2>
+            </div>
+            <div class="skill-groups">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <ul class="chips">
+                        <li>JavaScript</li><li>TypeScript</li><li>Python</li>
+                        <li>C++</li><li>C#</li><li>Java</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <ul class="chips">
+                        <li>React</li><li>Next.js</li><li>HTML</li><li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Backend &amp; Data</h3>
+                    <ul class="chips">
+                        <li>Node.js</li><li>Firebase</li><li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <ul class="chips">
+                        <li>Git</li><li>GitHub</li><li>Vercel</li><li>IntelliJ</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <main class="trace-rail">
-
-            <section class="panel" id="about">
-                <h2>About Me</h2>
-                <p>Hello! I'm currently a 2nd-year student at Mapúa Malayan Colleges Mindanao, studying Computer Science. I enjoy building full-stack web applications, exploring human-computer interaction, and applying what I learn in class to real projects — whether that's a hobby trading platform, a homestay admin system, or a weather dashboard.</p>
-            </section>
-
-            <section class="panel" id="stack">
-                <h2>Tech Stack</h2>
-
-                <div class="stack-group">
-                    <div class="stack-label">Languages</div>
-                    <div class="tech-grid">
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy"></div>
-                            <span class="tech-name">JavaScript</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" loading="lazy"></div>
-                            <span class="tech-name">TypeScript</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy"></div>
-                            <span class="tech-name">Python</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" loading="lazy"></div>
-                            <span class="tech-name">C++</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><span class="tech-fallback">C#</span></div>
-                            <span class="tech-name">C#</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><span class="tech-fallback">JAVA</span></div>
-                            <span class="tech-name">Java</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-group">
-                    <div class="stack-label">Frontend</div>
-                    <div class="tech-grid">
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy"></div>
-                            <span class="tech-name">React</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="" class="invert-dark" loading="lazy"></div>
-                            <span class="tech-name">Next.js</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy"></div>
-                            <span class="tech-name">HTML5</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><span class="tech-fallback">CSS</span></div>
-                            <span class="tech-name">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-group">
-                    <div class="stack-label">Backend &amp; Data</div>
-                    <div class="tech-grid">
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" loading="lazy"></div>
-                            <span class="tech-name">Node.js</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="" loading="lazy"></div>
-                            <span class="tech-name">Firebase</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy"></div>
-                            <span class="tech-name">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stack-group">
-                    <div class="stack-label">Deployment &amp; Tools</div>
-                    <div class="tech-grid">
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img class="invert-dark" src="https://cdn.simpleicons.org/vercel/000000" alt="" loading="lazy"></div>
-                            <span class="tech-name">Vercel</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy"></div>
-                            <span class="tech-name">Git</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img class="invert-dark" src="https://cdn.simpleicons.org/github/000000" alt="" loading="lazy"></div>
-                            <span class="tech-name">GitHub</span>
-                        </div>
-                        <div class="tech-tile">
-                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/intellijidea/000000" alt="" class="invert-dark" loading="lazy"></div>
-                            <span class="tech-name">IntelliJ</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="panel" id="projects">
+        <section class="section" id="projects">
+            <div class="section-head">
+                <span class="section-label">Work</span>
                 <h2>Projects</h2>
+            </div>
 
-                <div class="projects-subhead">CCIS InnoVision 2026</div>
+            <p class="section-note">CCIS InnoVision 2026</p>
 
-                <div class="featured-project">
-                    <div class="featured-project-body">
-                        <div class="featured-project-text">
-                            <div class="featured-tag"><span class="status-dot"></span>CCIS InnoVision 2026 · Application Development</div>
-                            <h3>HobbieTrades</h3>
-                            <p class="project-role">Trade your hobby gear with people in your community — no cash needed</p>
-                            <p class="featured-desc">A community-driven barter platform where hobbyists can list gear, propose fair-value trades, and connect with others nearby. Built as our Application Development summative project and presented at the CCIS InnoVision 2026 College Research, Innovation, and Project Colloquium. Includes user authentication, listing management, trade proposals, and a Java backend.</p>
-                            <div class="featured-links">
-                                <a href="https://hobbietrades.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                                <a href="https://github.com/tadaaki562/HobbieTrades" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Frontend Source</a>
-                                <a href="https://github.com/tadaaki562/HobbieTrades-backend-intellij" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Backend Source</a>
-                            </div>
-                            <details class="project-details-toggle">
-                                <summary>View preview</summary>
-                                <div class="screenshot-gallery">
-                                    <a href="assets/hobbietrades/login.svg" class="screenshot-frame">
-                                        <img src="assets/hobbietrades/login.svg" alt="HobbieTrades login screen" loading="lazy">
-                                    </a>
-                                </div>
-                            </details>
-                        </div>
-                        <div class="featured-project-media portrait">
-                            <a href="assets/hobbietrades/login.svg">
-                                <img src="assets/hobbietrades/login.svg" alt="HobbieTrades app preview" loading="lazy">
-                            </a>
-                        </div>
+            <article class="work-card work-card-featured">
+                <div class="work-preview">
+                    <img src="assets/hobbietrades/01-login.png" alt="HobbieTrades app screenshot">
+                </div>
+                <div class="work-body">
+                    <div class="tags">
+                        <span class="tag">InnoVision 2026</span>
+                        <span class="tag">App Development</span>
+                    </div>
+                    <h3>HobbieTrades</h3>
+                    <p class="work-tagline">Trade hobby gear with people in your community. No cash needed.</p>
+                    <p>A barter platform where hobbyists list gear, propose fair-value trades, and connect nearby. Built as our Application Development summative and presented at the CCIS InnoVision 2026 Colloquium. Includes auth, listings, trade proposals, and a Java backend.</p>
+                    <div class="work-links">
+                        <a href="https://hobbietrades.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo</a>
+                        <a href="https://github.com/tadaaki562/HobbieTrades" target="_blank" rel="noopener noreferrer">Frontend</a>
+                        <a href="https://github.com/tadaaki562/HobbieTrades-backend-intellij" target="_blank" rel="noopener noreferrer">Backend</a>
                     </div>
                 </div>
+            </article>
 
-                <div class="featured-project">
-                    <div class="featured-project-body">
-                        <div class="featured-project-text">
-                            <div class="featured-tag"><span class="status-dot"></span>Group project — payroll &amp; admin module</div>
-                            <h3>Kelsey's Homestay</h3>
-                            <p class="project-role">Vacation rental booking platform with admin operations dashboard</p>
-                            <p class="featured-desc">A booking platform for a Davao City homestay. I contributed to the admin side — specifically the payroll periods, DTR (daily time record) tracking, and related employee management features that support day-to-day homestay operations alongside guest bookings and calendar management.</p>
-                            <div class="featured-links">
-                                <a href="https://www.kelseyshomestay.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Project</a>
-                            </div>
-                        </div>
-                        <div class="featured-project-media landscape">
-                            <a href="https://www.kelseyshomestay.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="assets/kelseys/placeholder.svg" alt="Kelsey's Homestay preview" loading="lazy">
-                            </a>
-                        </div>
+            <article class="work-card work-card-featured">
+                <div class="work-preview work-preview-wide">
+                    <img src="assets/kelseys/placeholder.svg" alt="Kelsey's Homestay">
+                </div>
+                <div class="work-body">
+                    <div class="tags">
+                        <span class="tag">Group project</span>
+                        <span class="tag">Payroll &amp; DTR</span>
+                    </div>
+                    <h3>Kelsey&apos;s Homestay</h3>
+                    <p class="work-tagline">Vacation rental booking with an admin operations dashboard.</p>
+                    <p>A Davao City homestay platform. I worked on the admin side: payroll periods, DTR (daily time record) tracking, and employee management alongside guest bookings and calendar tools.</p>
+                    <div class="work-links">
+                        <a href="https://www.kelseyshomestay.com/" target="_blank" rel="noopener noreferrer">Live site</a>
                     </div>
                 </div>
+            </article>
 
-                <div class="projects-subhead">Other Projects</div>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <h3>LawLens</h3>
-                        <p>Legal information and awareness web application built with Next.js.</p>
-                        <a href="https://lawlens-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project ?</a>
-                        <a href="https://github.com/tadaaki562/lawlens" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>The Cozy Corner</h3>
-                        <p>E-commerce / storefront web app for a cozy lifestyle brand.</p>
-                        <a href="https://thecozycornerbyespinosa.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project ?</a>
-                        <a href="https://github.com/tadaaki562/thecozycornerbyespinosa" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Philippine Weather Dashboard</h3>
-                        <p>IT103 summative — real-time weather dashboard for Philippine locations.</p>
-                        <a href="https://weather-app-summative-pt3.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project ?</a>
-                        <a href="https://github.com/tadaaki562/weather-app-summative-pt3" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>GreenSense</h3>
-                        <p>Environmental awareness case study and landing page (IT103 M1 FA2).</p>
-                        <a href="https://tadaaki562.github.io/greensense/landingpage.html" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project ?</a>
-                        <a href="https://github.com/tadaaki562/greensense" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Machine Problems M1-FA3</h3>
-                        <p>JavaScript machine problems portfolio collection.</p>
-                        <a href="https://tadaaki562.github.io/MachineProblems/index.html" target="_blank" rel="noopener noreferrer" class="project-link">Visit Project ?</a>
-                        <a href="https://github.com/tadaaki562/MachineProblems" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>PokeDemo REST API</h3>
-                        <p>REST API demo project exploring HTTP endpoints and data fetching.</p>
-                        <a href="https://github.com/tadaaki562/restapi-pokedemo-espinosa" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>CS158L Data Science</h3>
-                        <p>Introduction to Data Science coursework and exercises.</p>
-                        <a href="https://github.com/tadaaki562/CS158L.A221.ESPINOSA" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>Infographic Presentation</h3>
-                        <p>CS124 lab infographic presentation project.</p>
-                        <a href="https://github.com/tadaaki562/InfographicPresentation" target="_blank" rel="noopener noreferrer" class="project-link">Source Code ?</a>
-                    </div>
-                </div>
-            </section>
+            <p class="section-note">Other projects</p>
 
-            <section class="panel" id="achievements">
-                <h2>Achievements &amp; Accomplishments</h2>
-                <div class="achievement-list">
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>CCIS InnoVision 2026 — Project Presenter</h3>
-                            <p>Presented <strong>HobbieTrades</strong> at the CCIS InnoVision 2026 College Research, Innovation, and Project Colloquium held on June 20, 2026 at the RG Birrey Building, Ma-a, Davao City.</p>
-                        </div>
+            <div class="work-grid">
+                <article class="work-card work-card-small">
+                    <h3>LawLens</h3>
+                    <p>Legal awareness web app built with Next.js.</p>
+                    <div class="work-links">
+                        <a href="https://lawlens-delta.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a href="https://github.com/tadaaki562/lawlens" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>CCIS InnoVision 2026 — Active Participant</h3>
-                            <p>Recognized for actively participating in the CCIS InnoVision 2026 colloquium, demonstrating commitment to academic excellence, innovation, and research.</p>
-                        </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>The Cozy Corner</h3>
+                    <p>Storefront web app for a lifestyle brand.</p>
+                    <div class="work-links">
+                        <a href="https://thecozycornerbyespinosa.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a href="https://github.com/tadaaki562/thecozycornerbyespinosa" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>Kelsey's Homestay — Payroll &amp; DTR Module</h3>
-                            <p>Contributed the payroll periods and daily time record (DTR) tracking features to the Kelsey's Homestay admin management system as part of a group project.</p>
-                        </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>Weather Dashboard</h3>
+                    <p>Philippine weather dashboard (IT103 summative).</p>
+                    <div class="work-links">
+                        <a href="https://weather-app-summative-pt3.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a href="https://github.com/tadaaki562/weather-app-summative-pt3" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>Coursera — HCI &amp; UX Coursework</h3>
-                            <p>Completed three Coursera specializations covering input &amp; interaction, user experience design, and ethics/culture/global perspectives — reinforcing HCI foundations for CS152.</p>
-                        </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>GreenSense</h3>
+                    <p>Environmental awareness case study (IT103).</p>
+                    <div class="work-links">
+                        <a href="https://tadaaki562.github.io/greensense/landingpage.html" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a href="https://github.com/tadaaki562/greensense" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>Certiport ITS Certification</h3>
-                            <p>Earned the ITS (Information Technology Specialist) Certiport certificate, validating foundational IT and computing skills.</p>
-                        </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>Machine Problems</h3>
+                    <p>JavaScript machine problems collection (M1-FA3).</p>
+                    <div class="work-links">
+                        <a href="https://tadaaki562.github.io/MachineProblems/index.html" target="_blank" rel="noopener noreferrer">Demo</a>
+                        <a href="https://github.com/tadaaki562/MachineProblems" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-marker"></div>
-                        <div>
-                            <h3>2nd Year CS — Term Milestones</h3>
-                            <p>Successfully completed 1st year and currently progressing through 2nd year Computer Science at Mapúa MCM, with deployed projects on Vercel and active GitHub contributions throughout the term.</p>
-                        </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>PokeDemo REST API</h3>
+                    <p>REST API demo with HTTP endpoints.</p>
+                    <div class="work-links">
+                        <a href="https://github.com/tadaaki562/restapi-pokedemo-espinosa" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
-                </div>
-            </section>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>CS158L Data Science</h3>
+                    <p>Introduction to Data Science coursework.</p>
+                    <div class="work-links">
+                        <a href="https://github.com/tadaaki562/CS158L.A221.ESPINOSA" target="_blank" rel="noopener noreferrer">Code</a>
+                    </div>
+                </article>
+                <article class="work-card work-card-small">
+                    <h3>Infographic Presentation</h3>
+                    <p>CS124 lab infographic project.</p>
+                    <div class="work-links">
+                        <a href="https://github.com/tadaaki562/InfographicPresentation" target="_blank" rel="noopener noreferrer">Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-            <section class="panel" id="certificates">
+        <section class="section" id="achievements">
+            <div class="section-head">
+                <span class="section-label">Highlights</span>
+                <h2>Achievements</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <time>Jun 2026</time>
+                    <div>
+                        <h3>CCIS InnoVision 2026 - Project Presenter</h3>
+                        <p>Presented HobbieTrades at the College Research, Innovation, and Project Colloquium in Davao City.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>Jun 2026</time>
+                    <div>
+                        <h3>CCIS InnoVision 2026 - Active Participant</h3>
+                        <p>Recognized for participation in the colloquium and commitment to innovation and research.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2026</time>
+                    <div>
+                        <h3>Kelsey&apos;s Homestay - Payroll &amp; DTR Module</h3>
+                        <p>Built payroll periods and daily time record tracking for the homestay admin system.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2026</time>
+                    <div>
+                        <h3>Coursera - HCI &amp; UX Coursework</h3>
+                        <p>Completed courses on input &amp; interaction, UX design, and ethics/culture/global perspectives.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2025</time>
+                    <div>
+                        <h3>Certiport ITS Certification</h3>
+                        <p>Earned the Information Technology Specialist certificate.</p>
+                    </div>
+                </li>
+                <li>
+                    <time>2025-26</time>
+                    <div>
+                        <h3>2nd Year CS Milestones</h3>
+                        <p>Completed 1st year and progressing through 2nd year with live projects on Vercel and active GitHub work.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section" id="certificates">
+            <div class="section-head">
+                <span class="section-label">Credentials</span>
                 <h2>Certificates</h2>
-                <div class="cert-grid">
-                    <a href="assets/certificates/ccis-innovision-participation.svg" target="_blank" class="cert-card">
-                        <div class="cert-thumb">
-                            <img src="assets/certificates/ccis-innovision-participation.svg" alt="CCIS InnoVision 2026 Certificate of Participation" loading="lazy">
-                        </div>
-                        <div class="cert-body">
-                            <div class="cert-issuer">College of Computer and Information Science</div>
-                            <h3>CCIS InnoVision 2026 — Certificate of Participation</h3>
-                            <p class="cert-date">College Research, Innovation &amp; Project Colloquium · June 20, 2026</p>
-                        </div>
-                    </a>
-                    <a href="assets/certificates/ccis-eventflow-verification.svg" target="_blank" class="cert-card">
-                        <div class="cert-thumb">
-                            <img src="assets/certificates/ccis-eventflow-verification.svg" alt="CCIS InnoVision 2026 EventFlow verified attendance certificate" loading="lazy">
-                        </div>
-                        <div class="cert-body">
-                            <div class="cert-issuer">EventFlow · Verified Certificate</div>
-                            <h3>CCIS InnoVision 2026 — Attendance Verification</h3>
-                            <p class="cert-date">Verification ID EF-CERT-2026-1340109 · June 20, 2026</p>
-                        </div>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/LLBLUGC973WQ" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-thumb">
-                            <img src="assets/certificates/coursera-input-interaction.svg" alt="Coursera certificate — Input and Interaction" loading="lazy">
-                        </div>
-                        <div class="cert-body">
-                            <div class="cert-issuer">UC San Diego · via Coursera</div>
-                            <h3>Input and Interaction</h3>
-                            <p class="cert-date">Course Certificate · May 1, 2026</p>
-                        </div>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/BWSFVJT3W648" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-thumb">
-                            <img src="assets/certificates/coursera-intro-ux.svg" alt="Coursera certificate — Introduction to User Experience Design" loading="lazy">
-                        </div>
-                        <div class="cert-body">
-                            <div class="cert-issuer">Georgia Institute of Technology · via Coursera</div>
-                            <h3>Introduction to User Experience Design</h3>
-                            <p class="cert-date">Course Certificate · May 29, 2026</p>
-                        </div>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/records/MFYSRRAGV636" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-thumb">
-                            <img src="assets/certificates/coursera-ethics-culture.svg" alt="Coursera certificate — Ethics, Culture, and Global Perspectives" loading="lazy">
-                        </div>
-                        <div class="cert-body">
-                            <div class="cert-issuer">University of Illinois · via Coursera</div>
-                            <h3>Ethics, Culture, and Global Perspectives</h3>
-                            <p class="cert-date">Course Certificate · February 26, 2026</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
+            </div>
+            <div class="cert-list">
+                <a href="assets/certificates/ccis-innovision-participation.svg" target="_blank" class="cert-item">
+                    <div class="cert-thumb"><img src="assets/certificates/ccis-innovision-participation.svg" alt=""></div>
+                    <div>
+                        <p class="cert-org">CCIS, Mapua MCM</p>
+                        <h3>InnoVision 2026 - Certificate of Participation</h3>
+                        <p class="cert-meta">June 20, 2026</p>
+                    </div>
+                </a>
+                <a href="assets/certificates/ccis-eventflow-verification.svg" target="_blank" class="cert-item">
+                    <div class="cert-thumb"><img src="assets/certificates/ccis-eventflow-verification.svg" alt=""></div>
+                    <div>
+                        <p class="cert-org">EventFlow</p>
+                        <h3>InnoVision 2026 - Attendance Verification</h3>
+                        <p class="cert-meta">ID EF-CERT-2026-1340109</p>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/records/LLBLUGC973WQ" target="_blank" rel="noopener noreferrer" class="cert-item">
+                    <div class="cert-thumb"><img src="assets/certificates/coursera-input-interaction.svg" alt=""></div>
+                    <div>
+                        <p class="cert-org">UC San Diego / Coursera</p>
+                        <h3>Input and Interaction</h3>
+                        <p class="cert-meta">May 1, 2026</p>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/records/BWSFVJT3W648" target="_blank" rel="noopener noreferrer" class="cert-item">
+                    <div class="cert-thumb"><img src="assets/certificates/coursera-intro-ux.svg" alt=""></div>
+                    <div>
+                        <p class="cert-org">Georgia Tech / Coursera</p>
+                        <h3>Introduction to User Experience Design</h3>
+                        <p class="cert-meta">May 29, 2026</p>
+                    </div>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/records/MFYSRRAGV636" target="_blank" rel="noopener noreferrer" class="cert-item">
+                    <div class="cert-thumb"><img src="assets/certificates/coursera-ethics-culture.svg" alt=""></div>
+                    <div>
+                        <p class="cert-org">U of Illinois / Coursera</p>
+                        <h3>Ethics, Culture, and Global Perspectives</h3>
+                        <p class="cert-meta">February 26, 2026</p>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-            <section class="panel experience">
-                <h2>Past Experience</h2>
-                <p>Comfortable with HTML and CSS from building and styling several sites, with a growing handle on JavaScript and TypeScript for interactive web apps. Since starting college, I've picked up C++, C#, and Java — which helped me understand how different languages get used in real-world projects, not just in class.</p>
-                <p>Through group projects like HobbieTrades and Kelsey's Homestay, I've gained hands-on experience with frontend development, backend APIs, deployment on Vercel, and collaborating via GitHub — shipping projects that people can actually use.</p>
-            </section>
+        <section class="section" id="connect">
+            <div class="section-head">
+                <span class="section-label">Contact</span>
+                <h2>Let&apos;s connect</h2>
+            </div>
+            <div class="contact-row">
+                <a href="https://github.com/tadaaki562" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub</a>
+                <a href="https://tadaaki562.github.io/" target="_blank" rel="noopener noreferrer" class="contact-link">GitHub Pages</a>
+                <a href="mailto:chlyde.espinosa@student.mcm.edu.ph" class="contact-link">Email</a>
+            </div>
+        </section>
 
-            <section class="panel" id="connect">
-                <h2>Connect</h2>
-                <div class="connect-grid">
-                    <a href="https://github.com/tadaaki562" target="_blank" rel="noopener noreferrer" class="connect-tile">
-                        <div class="connect-icon"><img class="invert-dark" src="https://cdn.simpleicons.org/github/000000" alt="" loading="lazy"></div>
-                        <span class="connect-name">GitHub</span>
-                    </a>
-                    <a href="https://tadaaki562.github.io/" target="_blank" rel="noopener noreferrer" class="connect-tile">
-                        <div class="connect-icon"><img src="https://cdn.simpleicons.org/githubpages/222222" alt="" class="invert-dark" loading="lazy"></div>
-                        <span class="connect-name">GitHub Pages</span>
-                    </a>
-                    <a href="mailto:chlyde.espinosa@student.mcm.edu.ph" class="connect-tile">
-                        <div class="connect-icon">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-                                <path d="M3 7l9 6 9-6"></path>
-                            </svg>
-                        </div>
-                        <span class="connect-name">Email</span>
-                    </a>
-                </div>
-            </section>
+    </main>
 
-        </main>
+    <footer class="footer">
+        <p>&copy; 2026 Chlyde Christian Espinosa</p>
+    </footer>
 
-        <footer>
-            <p>© 2026 Chlyde Christian Espinosa. Computer Science Student.</p>
-        </footer>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>
