@@ -437,27 +437,60 @@ section {
 }
 
 /* Certificates */
-.cert-gallery {
+.cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
 }
 
-.cert-figure {
-    margin: 0;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
+.cert-card {
+    display: flex;
+    flex-direction: column;
     background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
     box-shadow: var(--shadow);
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
 }
 
-.cert-figure img {
+.cert-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px var(--shadow);
+    text-decoration: none;
+}
+
+.cert-cover {
+    aspect-ratio: 16 / 9;
+    background: var(--accent-soft);
+    overflow: hidden;
+}
+
+.cert-cover img {
     width: 100%;
-    height: auto;
-    display: block;
-    aspect-ratio: 4 / 3;
+    height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.cert-info {
+    padding: 14px 16px 16px;
+}
+
+.cert-info h3 {
+    font-size: 0.92rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+    line-height: 1.35;
+}
+
+.cert-action {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--accent);
 }
 
 /* Contact */
