@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f8f9fb"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#c9a227" stroke-width="3"/>
+  <rect x="0" y="0" width="120" height="120" fill="#1a2b4a"/>
+  <rect x="680" y="480" width="120" height="120" fill="#c0392b"/>
+  <text x="400" y="120" text-anchor="middle" fill="#1a2b4a" font-family="Georgia, serif" font-size="34" font-weight="700">CERTIFICATE</text>
+  <text x="400" y="158" text-anchor="middle" fill="#c0392b" font-family="Arial, sans-serif" font-size="18" font-weight="700">OF PARTICIPATION</text>
+  <text x="400" y="220" text-anchor="middle" fill="#1a2b4a" font-family="Arial, sans-serif" font-size="12">THIS CERTIFICATE IS PROUDLY PRESENTED TO</text>
+  <text x="400" y="280" text-anchor="middle" fill="#c0392b" font-family="Arial, sans-serif" font-size="28" font-weight="700">Chlyde Christian Espinosa</text>
+  <text x="400" y="340" text-anchor="middle" fill="#1a2b4a" font-family="Arial, sans-serif" font-size="13">CCIS INNOVISION 2026</text>
+  <text x="400" y="365" text-anchor="middle" fill="#56666e" font-family="Arial, sans-serif" font-size="12">College Research, Innovation &amp; Project Colloquium</text>
+  <text x="400" y="390" text-anchor="middle" fill="#56666e" font-family="Arial, sans-serif" font-size="12">June 20, 2026 · RG Birrey Building, Davao City</text>
+</svg>
